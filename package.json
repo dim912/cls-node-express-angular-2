@@ -1,15 +1,23 @@
 {
-  "name": "cls",
+  "name": "modularexpress",
   "version": "1.0.0",
-  "description": "cls-nodejs-expressjs-angular2",
-  "main": "app.js",
+  "description": "Modular Express 4 web application",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "node_modules/.bin/mocha tests/**"
   },
-  "author": "",
+  "author": "Dimuthu Senanayaka",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.15.2",
-    "morgan": "^1.8.1"
+    "morgan": "^1.8.1",
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "express-logging": "^1.1.1",
+    "jade": "^1.9.2",
+    "logops": "^1.0.7"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "should": "^6.0.1"
   }
 }
