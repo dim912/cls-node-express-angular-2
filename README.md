@@ -10,4 +10,5 @@ $ node server.js => to run express modular app using express 4 routes
 
 views => jade 
 
+angular2 -> using CLI
 ```

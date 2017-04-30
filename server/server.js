@@ -1,10 +1,10 @@
 var express = require('express')
 var expressLogging = require('express-logging')
 var logger = require('logops');
+const path = require('path');
 
 var bodyParser = require('body-parser')
 
-//properties
 var port = process.env.PORT || 3000
 
 //begin express(a routing and middleware framework)
@@ -21,11 +21,15 @@ app.set('view engine', 'jade')
 
 //application level middleware
 
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(path.join(__dirname, '../web/dist')));
 app.use(expressLogging(logger));
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(require('./controllers'))
+app.use('/api', require('./controllers'))
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../web/dist/index.html'));
+});
 
 app.listen(port, function () {
   console.log('Listening on port ' + port)
