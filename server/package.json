@@ -1,0 +1,24 @@
+{
+  "name": "modularexpress",
+  "version": "1.0.0",
+  "description": "Modular Express 4 web application",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node_modules/.bin/mocha tests/**"
+  },
+  "author": "Dimuthu Senanayaka",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "express-logging": "^1.1.1",
+    "jade": "^1.9.2",
+    "logops": "^1.0.7",
+    "morgan": "^1.8.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "should": "^6.0.1"
+  }
+}

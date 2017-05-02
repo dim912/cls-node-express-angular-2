@@ -4,8 +4,6 @@
   "description": "Modular Express 4 web application",
   "angular-cli": {},
   "scripts": {
-    "start": "node server/server.js",
-    "test": "node_modules/.bin/mocha tests/**",
     "ng": "ng",
     "angularStart": "ng serve",
     "angularTest": "ng test",
@@ -15,13 +13,6 @@
   "author": "Dimuthu Senanayaka",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.12.3",
-    "express": "^4.12.3",
-    "express-logging": "^1.1.1",
-    "jade": "^1.9.2",
-    "logops": "^1.0.7",
-    "morgan": "^1.8.1",
-    "path": "^0.12.7",
     "@angular/common": "^2.3.1",
     "@angular/compiler": "^2.3.1",
     "@angular/core": "^2.3.1",
@@ -36,8 +27,6 @@
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
-    "mocha": "^2.2.4",
-    "should": "^6.0.1",
     "@angular/compiler-cli": "^2.3.1",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",
